@@ -21,6 +21,8 @@ jobs:
         pwd
         #
         sudo mv Btools /opt/
+        sudo mv asus_logo.png /opt/
+        sudo mv state.js /opt/
         cd /opt/Btools
         echo "sudo ls -l"
         pwd
@@ -50,12 +52,13 @@ jobs:
         #
          #cd /opt/Btools/Theme/
          #sh install_Theme.sh
-         sudo ls -al
+         cd /opt
          yes | cp -rf asus_logo.png /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/bootstrap/img
         #
          cd /opt/Btools/Patch/
          sh install_Patch.sh
         #
+         cd /opt
          yes | cp -rf state.js /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed
         #
         cd /opt/Btools/build_toolchain
