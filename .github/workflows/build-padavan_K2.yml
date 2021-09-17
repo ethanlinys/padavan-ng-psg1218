@@ -53,13 +53,13 @@ jobs:
          #cd /opt/Btools/Theme/
          #sh install_Theme.sh
          cd /opt
-         yes | cp -rf asus_logo.png /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/bootstrap/img
+         yes 2>/dev/null | cp -rf asus_logo.png /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/bootstrap/img
         #
          cd /opt/Btools/Patch/
          sh install_Patch.sh
         #
          cd /opt
-         yes | cp -rf state.js /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed
+         yes 2>/dev/null | cp -rf state.js /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed
         #
         cd /opt/Btools/build_toolchain
         sh install_build_toolchain.sh
