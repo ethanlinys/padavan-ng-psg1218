@@ -47,11 +47,14 @@ jobs:
          cd /opt/Btools/LANG_CN/
          sh install_LANG_CN_SSD.sh
         #
-         cd /opt/Btools/Theme/
-         sh install_Theme.sh
+         #cd /opt/Btools/Theme/
+         #sh install_Theme.sh
+         yes | cp -rf asus_logo.png /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/bootstrap/img
         #
          cd /opt/Btools/Patch/
          sh install_Patch.sh
+        #
+         yes | cp -rf state.js /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed
         #
         cd /opt/Btools/build_toolchain
         sh install_build_toolchain.sh
